@@ -1,8 +1,140 @@
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1614470154102-3d0faa734c02?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) no-repeat top center;
+  background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* header:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+} */
+
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+header .banner-text { 
+  width: 100%;
+  padding: 100px; 
+}
+
+
+#nav-wrap ul{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  display: table;
+  list-style: none;
+}
+
+li {
+  display: table-cell;
+  padding: 0 1.5em;
+  vertical-align:middle;
+  text-align:center;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#nav-wrap > a.mobile-btn { display: none; }
+
+.carousel {
+  width: 460px;
+  height: 180px;
+  position: relative;
+}
+
+
+#history {
+  background: no-repeat top center url(https://images.unsplash.com/photo-1558987830-b9fc9f156565?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#history h1 {
+  font: 25px/30px 'opensans-bold', sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+#history p {
+  line-height: 30px;
+  color: white;
+}
+#history .main-col {
+  padding-right: 5%;
+}
+
+#team {
+  background: no-repeat top center url(https://images.unsplash.com/photo-1520896831845-02dd290fd080?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  padding-left: 200px;
+}
+
+.left {
+  text-align: start;
+  padding-right: 100px;
+}
+
+.floatleft{
+  text-align: left;
+}
+.floatright{
+  text-align: right;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: white;
 }
 .logout-link {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  #nav-wrap ul#nav { width: auto; float: none; }
 }
